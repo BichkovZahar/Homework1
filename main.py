@@ -1,8 +1,9 @@
-def lesson_3(*args):
-    dictionary = {}
-    args = input("Введіть значення чере з пробіл: ").split(' ')
+def lesson_4(*args):
+    dictionary = []
+    args = input("Введіть значення через пробіл: ").split(' ')
     args = [int(i) for i in args]
     for rezult in args:
-        dictionary[rezult] = rezult**2
-    print(dictionary)
-lesson_3()
+      if rezult % 2 != 0:
+          dictionary.append(rezult)
+    return dictionary
+print(lesson_4())
