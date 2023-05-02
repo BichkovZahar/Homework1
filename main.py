@@ -1,6 +1,8 @@
-def lesson_2(*args):
-    args = input("Введіть числа через пробіл: ").split(' ')
-    args = [int(i)for i in args]
-    print("Найбільше значення:" , max(args))
-    print("Найменьше значення:" , min(args))
-lesson_2()
+def lesson_3(*args):
+    dictionary = {}
+    args = input("Введіть значення чере з пробіл: ").split(' ')
+    args = [int(i) for i in args]
+    for rezult in args:
+        dictionary[rezult] = rezult**2
+    print(dictionary)
+lesson_3()
